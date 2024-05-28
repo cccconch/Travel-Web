@@ -125,7 +125,7 @@ input { outline: none; }
   width: 100%;
   min-height: 400px;
   background-color: #FFF;
-  padding-top: 60px;
+  padding-top: 0px;
 }
 /* list_new */
 .list_leftbox { width: 600px; height: 400px; }

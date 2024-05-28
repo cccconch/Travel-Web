@@ -77,15 +77,15 @@
   </div>
 <div class="banner1">
   <img class="aa1" style="width: 20px;height: 20px" src="../assets/images/向左箭头.png"   id="arrLeft"  />
-<!-- 
-  <ul>
-    <li v-for="(image, index) in images" :key="index">
-        <img :src="image" >
+ 
+<!--   <ul>
+    <li v-for="item in images" :key="item">
+      <img :src="item.src" >
     </li>
-  </ul>
- -->
+  </ul> -->
 
-  <ul>
+
+<ul>
       <li><a href="###"><img src="../assets/images/pa.jpg"   ></a></li>
       <li><a href="###"><img src="../assets/images/han.jpg"  > </a></li>
       <li><a href="###"><img src="../assets/images/bao.jpg"  > </a></li>
@@ -97,7 +97,7 @@
       <li><a href="###"><img src="../assets/images/pa.jpg"  > </a></li>
       <li><a href="###"><img src="../assets/images/han.jpg" > </a></li>
       <li><a href="###"><img src="../assets/images/han.jpg" > </a></li>
-  </ul> 
+</ul>
 
 </div>
 
@@ -191,32 +191,42 @@ $(function(){
   })
 });
 
+const images = [
+  {src:'../assets/images/01.jpg'},
+  {src:'../assets/images/01.jpg'},
+  {src:'../assets/images/01.jpg'},
+  {src:'../assets/images/01.jpg'},
+  {src:'../assets/images/01.jpg'}
+]
 </script>
 
 <style scoped>
 .banner1{
-  position: relative;
-  width: 1200px;
-  white-space: nowrap;
-  overflow-x: hidden;
+position: relative;
+width: 1200px;
+white-space: nowrap;
+overflow-x: hidden;
 
-  margin: 0 auto;
-  padding-top:100px;
-  padding-left:30px;
+margin: 0 auto;
+padding-top:60px;
+padding-left:30px;
+padding-bottom:30px;
 }
 .banner1:hover {
-  overflow-x: auto;
+overflow-x: auto;
 }
 .banner1 ul li{
-  display: inline-block;
+display: inline-block;
 }
 .banner1 .aa1{
-  position: absolute;
-  left:0px;
-  top:157px;
+position: absolute;
+left:0px;
+top:157px;
 }
 .banner1 img{
-  width: 200px;
-  margin-right:15px;
+width: 200px;
+height: 120px;
+margin-right:15px;
 }
+
 </style>
