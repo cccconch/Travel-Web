@@ -76,7 +76,7 @@
     </div>
   </div>
 <div class="banner1">
-  <img class="aa1" style="width: 20px;height: 20px" src="../assets/images/向左箭头.png"   id="arrLeft"  />
+  
  
 <!--   <ul>
     <li v-for="item in images" :key="item">
@@ -98,6 +98,8 @@
       <li><a href="###"><img src="../assets/images/han.jpg" > </a></li>
       <li><a href="###"><img src="../assets/images/han.jpg" > </a></li>
 </ul>
+
+ 
 
 </div>
 
@@ -165,39 +167,16 @@
   </div>
 </template>
 <script setup>
-import $ from 'jquery'
 
+import banner from './banner.vue';
 
-function timer(opj){
-  $(opj).find('ul').animate({
-    marginTop : "-80px"
-  },500,function(){
-    $(this).css({marginTop : "0rem"}).find("li:first").appendTo(this);
-  })
-}
-$(function(){
-  var num = $('.notice_active').find('li').length;
-  if(num > 1){
-    var time=setInterval('timer(".notice_active")',3500);
-    $('.gg_more a').mousemove(function(){
-      clearInterval(time);
-    }).mouseout(function(){
-      time = setInterval('timer(".notice_active")',3500);
-    });
-  }
-
-  $(".news_ck").click(function(){
-    location.href = $(".notice_active .notice_active_ch").children(":input").val();
-  })
-});
-
-const images = [
+/* const images = [
   {src:'../assets/images/01.jpg'},
   {src:'../assets/images/01.jpg'},
   {src:'../assets/images/01.jpg'},
   {src:'../assets/images/01.jpg'},
   {src:'../assets/images/01.jpg'}
-]
+] */
 </script>
 
 <style scoped>

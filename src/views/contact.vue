@@ -1,7 +1,3 @@
-<script setup>
-
-</script>
-
 <template>
   <div class="clear"></div>
   <div class="box fl">
@@ -78,6 +74,10 @@
     </div>
   </div>
 </template>
+
+<script setup>
+
+</script>
 
 <style scoped>
 
